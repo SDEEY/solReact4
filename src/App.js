@@ -4,9 +4,9 @@ import * as solanaWeb3 from "@solana/web3.js";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 1
-const image = 'https://pbs.twimg.com/profile_images/1490340992905580546/-GiqKUNC_400x400.jpg'
-const Title = 'Record Label DAO'
+const solAmount = 0.05
+const image = 'https://pbs.twimg.com/profile_images/1502062774452736008/zY0gu5kc_400x400.jpg'
+const Title = 'Solana Planets'
 
 document.title = Title
 
