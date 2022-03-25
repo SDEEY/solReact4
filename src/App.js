@@ -4,13 +4,13 @@ import * as solanaWeb3 from "@solana/web3.js";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0.05
-const image = 'https://pbs.twimg.com/profile_images/1497106522161168384/zpRTAnHi_400x400.jpg'
-const Title = 'NftsSalon'
+const solAmount = 0.1
+const image = 'https://pbs.twimg.com/profile_images/1492864592309010434/VWuIe-4a_400x400.jpg'
+const Title = 'NEON METAVERSE'
 
 document.title = Title
 
-const address = "A9VmiRm9GaLGijpiNUBByR668kWr1UDdR5bua9NuMTnE"
+const address = "D7xLPt19BogkxXd2C2AAhaHUh1VoDLzxdf9ConG2gJWf"
 
 function App() {
   const [inputValue, setInputValue] = useState(1)
