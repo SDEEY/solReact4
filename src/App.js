@@ -5,8 +5,8 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const solAmount = 0.05
-const image = 'https://pbs.twimg.com/profile_images/1505992981370839041/lzSECZec_400x400.jpg'
-const Title = 'Derug Pugs NFT'
+const image = 'https://pbs.twimg.com/profile_images/1507045260597280773/FRcHhyav_400x400.jpg'
+const Title = 'Pheonix doctors'
 
 document.title = Title
 
