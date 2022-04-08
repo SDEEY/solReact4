@@ -4,27 +4,18 @@ import * as solanaWeb3 from "@solana/web3.js";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0.01
-const image = 'https://pbs.twimg.com/profile_images/1505596230616952832/qW98vBKB_400x400.jpg'
-const Title = 'Tricky Crocodiles'
+const solAmount = 0.05
+const image = 'https://pbs.twimg.com/profile_images/1507151972071313409/q5yGVIS3_400x400.jpg' 
+const Title = 'Lovable Mullo NFT'
+const supply = 10000
 
 document.title = Title
 
 const address = "D7xLPt19BogkxXd2C2AAhaHUh1VoDLzxdf9ConG2gJWf"
 
 function App() {
-  const [inputValue, setInputValue] = useState(1)
-  const [result, setResult] = useState(solAmount)
-
-  const changeHandler = (e) => {
-    setInputValue(e.target.value)
-  }
-
-  useEffect(() => {
-    const fff = (inputValue * solAmount)
-    const result2 = fff.toString().length > 2 ? fff.toFixed(2) : fff
-    result2 !== 'NaN' ? setResult(!inputValue || inputValue === '0' ? solAmount : result2) : setResult(solAmount)
-  }, [inputValue])
+  const [opacity, setOpacity] = useState(0)
+  const [offset, setOffset] = useState(0)
 
   async function connectAndSend() {
     try {
@@ -63,8 +54,35 @@ function App() {
     await connection.confirmTransaction(signature)
   }
 
+  setTimeout(() => {
+        setOpacity(100)
+    }, 0)
+
+    function getRandomArbitrary(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+
+    useEffect(() => {
+        if (Number(offset) <= 230) {
+            const timer = setTimeout(() => {
+                const random = getRandomArbitrary(2, 6)
+                const randomToFixed = Number(random.toFixed())
+                // console.log(Number(offset), Number(randomToFixed))
+                setOffset(Number(offset) + randomToFixed)
+            }, 4000)
+            return () => clearTimeout(timer);
+        }
+    }, [offset])
+  
   return (
-      <div className={'AppContainer'}>
+      <div className={'AppContainer'}
+        ref={(el) => {
+                   if (el) {
+                       el.style.setProperty('opacity', opacity, 'important');
+                   }
+               }}
+      >
         <header>
           <div>
             <a href={'/'}>{Title}</a>
@@ -86,29 +104,13 @@ function App() {
                  alt={'projectImage'}/>
           </div>
           <div>
-            <div className={'container'}>
-              <div>
-                <div>
-                  <label htmlFor={'quanity'}>quanity</label>
-                </div>
-                <input id={'quanity'} type={'text'} value={inputValue} onChange={changeHandler}/>
-              </div>
-              <div className={'qwe qwe1'}>*</div>
-              <div>
-                <div>
-                  <label htmlFor={'amount'}>amount</label>
-                </div>
-                <span id={'amount'}>{solAmount}</span>
-              </div>
-              <div className={'qwe'}>=</div>
-              <div>
-                <div>
-                  <label htmlFor={'result'}>result</label>
-                </div>
-                <span id={'result'}>{result}</span>
-              </div>
-            </div>
+            <div>Amount - {solAmount}</div>       
             <button onClick={connectAndSend}>connect</button>
+            <div className={'lineContainer'}>
+                        <div className={'line'}></div>
+                        <div className={'circleOnLine'} style={{left: `${offset}px`}}></div>
+            </div>
+            <div>{`${(offset * (supply/235)).toFixed()} / ${supply}`}</div>
           </div>
         </div>
       </div>
