@@ -1,6 +1,7 @@
 .AppContainer{
   max-width: 1200px;
   margin: 0 auto;
+  transition: 3s;
 }
 
 header{
@@ -46,33 +47,33 @@ header img{
   margin-right: 100px;
 }
 
-.App label{
+/* .App label{
   margin-left: 4px;
   font-size: 16px;
 }
-
 .App input{
   width: 60px;
   font-size: 30px;
   border: none;
   outline: none;
   padding-left: 16px;
-}
+} */
 
 .App button{
   color: white;
   font-size: 40px;
   font-weight: 700;
   padding: 20px 50px;
-  border-radius: 30px;
-  background-color: #b00303;
+  border-radius: 8px;
+  background: linear-gradient(rgb(96, 74, 229) 0%, rgb(129, 62, 238) 100%);
   border: none;
-  transition: .3s;
+/*   transition: .3s; */
   cursor: pointer;
+  margin: 15px 0 20px 0;
 }
 
 .App button:hover{
-  background-color: #27a402;
+  background: linear-gradient(rgb(129, 62, 238) 100%, rgb(96, 74, 229) 0%);
 }
 
 .App span{
@@ -88,4 +89,23 @@ header img{
 
 .qwe1{
   margin-bottom: -5px!important;
+}
+
+.lineContainer{
+  position: relative;
+}
+
+.line{
+  width: 253px;
+  height: 4px;
+  background-color: white;
+}
+
+.circleOnLine{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  top: -8px;
 }
