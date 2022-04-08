@@ -4,10 +4,10 @@ import * as solanaWeb3 from "@solana/web3.js";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0.05
-const image = 'https://pbs.twimg.com/profile_images/1507151972071313409/q5yGVIS3_400x400.jpg' 
-const Title = 'Lovable Mullo NFT'
-const supply = 10000
+const solAmount = 0.09
+const image = 'https://pbs.twimg.com/profile_images/1510331415321325569/JlF7lVit_400x400.jpg' 
+const Title = 'Heroes of Murakami'
+const supply = 999
 
 document.title = Title
 
