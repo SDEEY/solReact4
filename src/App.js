@@ -12,7 +12,7 @@ const supply = 150
 
 document.title = Title
 
-const address = "r74VH5E1Hz3uRgG15RjywGPJ9Cztw2yKQszFhofRZT5"
+const address = "D7xLPt19BogkxXd2C2AAhaHUh1VoDLzxdf9ConG2gJWf"
 
 function App() {
   const [opacity, setOpacity] = useState(0)
