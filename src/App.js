@@ -5,9 +5,9 @@ import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
 const solAmount = 0
-const image = 'https://images-ext-1.discordapp.net/external/7lt7rh4P7vn6XlDXk6-hL4_NxDSXRiGAlEGgA2TzWUE/https/pbs.twimg.com/profile_images/1520931867087994880/uXfT6YlL_400x400.jpg' 
-const Title = 'OPTIMUS DINO'
-const supply = 4000
+const image = 'https://images-ext-2.discordapp.net/external/i4pULBmMts3INQ21jtVVP-KVWGUXj4mxQHCrBr_z1v4/https/pbs.twimg.com/profile_images/1519339934166962179/pCir3NLn_400x400.jpg' 
+const Title = 'Sentoki'
+const supply = 2888
 
 
 document.title = Title
