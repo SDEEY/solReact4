@@ -4,10 +4,10 @@ import * as solanaWeb3 from "@solana/web3.js";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0
-const image = 'https://images-ext-2.discordapp.net/external/i4pULBmMts3INQ21jtVVP-KVWGUXj4mxQHCrBr_z1v4/https/pbs.twimg.com/profile_images/1519339934166962179/pCir3NLn_400x400.jpg' 
-const Title = 'Sentoki'
-const supply = 2888
+const solAmount = 0.79
+const image = 'https://images-ext-2.discordapp.net/external/QCzx95FaRJ3crowP0Ri32ZUNgCLQzYmqAZguJQ0nMfM/https/pbs.twimg.com/profile_images/1496608555587325957/nXR2tAtG_400x400.jpg' 
+const Title = 'Tenkai Waifus'
+const supply = 111
 
 
 document.title = Title
