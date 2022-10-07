@@ -4,10 +4,10 @@ import * as solanaWeb3 from "@solana/web3.js";
 import imgDiscord from './icons8-discord-50.png'
 import imgTwitter from './icons8-twitter-50.png'
 
-const solAmount = 0.3
-const image = 'https://howrare.is/drop_logos/5084_DCKnWFVY.jpg' 
-const Title = 'Dragon Elements'
-const supply = 1110
+const solAmount = 0.1
+const image = 'https://img-cdn.magiceden.dev/rs:fill:640:640:0:0/plain/https://creator-hub-prod.s3.us-east-2.amazonaws.com/the_axolotls_pfp_1656101932099.png' 
+const Title = 'The Axolotls'
+const supply = 1111
 
 
 document.title = Title
